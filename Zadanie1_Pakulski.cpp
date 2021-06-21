@@ -87,7 +87,7 @@ int main() {
     cout << endl << endl << "AVG for X is: " << avg << " and the elements count greater that avg is: " << elem_count << endl;
 
     int * XD;
-    XD = new int[elem_count - 1];
+    XD = new int[elem_count];
     for (int i{0}; i < 49; i++) {
         if (X[i] > avg) {
             XD[j] = X[i];
@@ -95,7 +95,7 @@ int main() {
         }
     }
     cout << endl << endl << "The greater XD values are: ";
-    printTable(XD, elem_count - 1);
+    printTable(XD, elem_count);
 
     delete [] XD;
 
